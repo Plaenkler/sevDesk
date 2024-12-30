@@ -35,19 +35,16 @@ mkdir -p "$TYPES_DIR" "$CLIENT_DIR" "$SERVER_DIR" || abort "Failed to create tar
 # Generate Go files for types
 echo "Generating Go files for types ..."
 oapi-codegen -generate types -o "$TYPES_DIR/types.go" -package types "$OPENAPI_FILE" || abort "Error generating types files."
-
 echo -e "${GREEN}Types files successfully generated in $TYPES_DIR/types.go${NC}"
 
 # Generate Go files for client
 echo "Generating Go files for client ..."
 oapi-codegen -generate client -o "$CLIENT_DIR/client.go" -package client "$OPENAPI_FILE" || abort "Error generating client files."
-
 echo -e "${GREEN}Client files successfully generated in $CLIENT_DIR/client.go${NC}"
 
 # Generate Go files for server
 echo "Generating Go files for server ..."
 oapi-codegen -generate server -o "$SERVER_DIR/server.go" -package server "$OPENAPI_FILE" || abort "Error generating server files."
-
 echo -e "${GREEN}Server files successfully generated in $SERVER_DIR/server.go${NC}"
 
 echo -e "${GREEN}All steps completed successfully.${NC}"
