@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Linters](https://github.com/plaenkler/sevdesk/actions/workflows/linters.yml/badge.svg)](https://github.com/plaenkler/sevdesk/actions/workflows/linters.yml)
-[![Go Reference](https://pkg.go.dev/badge/github.com/Plaenkler/sevDesk.svg)](https://pkg.go.dev/github.com/Plaenkler/sevDesk)
+[![Go Reference](https://pkg.go.dev/badge/github.com/plaenkler/sevdesk.svg)](https://pkg.go.dev/github.com/plaenkler/sevdesk)
 [![Support me](https://img.shields.io/badge/Support%20me%20%E2%98%95-orange.svg)](https://www.buymeacoffee.com/Plaenkler)
 
 ## 🎯 Purpose
@@ -18,7 +18,7 @@
 Install the package in your Go project:
 
 ```bash
-go get github.com/Plaenkler/sevDesk
+go get github.com/plaenkler/sevdesk
 ```
 
 ## 📚 Contribution
