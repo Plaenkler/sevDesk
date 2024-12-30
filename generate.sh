@@ -14,18 +14,18 @@ NC='\033[0m'
 RED='\033[0;31m'
 
 abort() {
-    echo -e "${RED}Error: $1${NC}"
-    exit 1
+	echo -e "${RED}Error: $1${NC}"
+	exit 1
 }
 
 # Check if the OpenAPI file exists
 if [ -f "$OPENAPI_FILE" ]; then
-    echo -e "${GREEN}$OPENAPI_FILE already exists. Skipping download.${NC}"
+	echo -e "${GREEN}$OPENAPI_FILE already exists. Skipping download.${NC}"
 else
-    # Download the OpenAPI definition
-    echo "Downloading OpenAPI definition from $OPENAPI_URL ..."
-    curl -o "$OPENAPI_FILE" "$OPENAPI_URL" || abort "Failed to download OpenAPI definition."
-    echo -e "${GREEN}OpenAPI definition successfully downloaded to $OPENAPI_FILE${NC}"
+	# Download the OpenAPI definition
+	echo "Downloading OpenAPI definition from $OPENAPI_URL ..."
+	curl -o "$OPENAPI_FILE" "$OPENAPI_URL" || abort "Failed to download OpenAPI definition."
+	echo -e "${GREEN}OpenAPI definition successfully downloaded to $OPENAPI_FILE${NC}"
 fi
 
 # Create target directories if they don't exist
