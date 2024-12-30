@@ -3159,8 +3159,8 @@ paths:
                   type: number
                   example: 1234152
                 accountingYearBegin:
-                  type: number
-                  format: timestamp
+                  type: integer
+                  format: int64
                   example: 1681907569
       responses:
         '200':
