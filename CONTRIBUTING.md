@@ -1,6 +1,6 @@
-# Contributing to DDNS Updater
+# Contributing to sevDesk
 
-Welcome to the DDNS Updater project! Your contributions are highly appreciated. We've designed the process to be straightforward and transparent, whether you're:
+Welcome to the sevDesk project! Your contributions are highly appreciated. We've designed the process to be straightforward and transparent, whether you're:
 
 - Reporting a bug
 - Discussing code-related matters
